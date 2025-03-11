@@ -1,0 +1,361 @@
+/* poopins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e0039, #002347); /* bg */
+  color: white;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: #0099ff;
+}
+
+.hero p {
+  max-width: 1000px;
+  margin-bottom: 60px;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 40px;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* CARD SECTION */
+.card-section {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 40px 50px;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-text h2 {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.card-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-image img {
+  width: 200px;
+  height: auto;
+}
+
+/* CARD KHUSUS DAFTAR */
+.card.daftar-card {
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(0, 153, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 40px 50px;
+  transition: all 0.4s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+/* Hover effect */
+.card.daftar-card:hover {
+  transform: scale(1.03);
+  background: rgba(0, 153, 255, 0.25);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Image di dalam card daftar */
+.card.daftar-card .card-image img {
+  width: 200px;
+  height: auto;
+}
+
+/* Text di dalam card daftar */
+.card.daftar-card .card-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card.daftar-card .card-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Tombol daftar */
+.card.daftar-card .button {
+  padding: 16px 40px;
+  font-size: 1.2rem;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.card.daftar-card .button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* RESPONSIVE untuk card daftar */
+@media (max-width: 992px) {
+  .card.daftar-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .card.daftar-card .card-image img {
+    width: 180px;
+  }
+
+  .card.daftar-card .card-text h2 {
+    font-size: 2rem;
+  }
+
+  .card.daftar-card .card-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card.daftar-card {
+    padding: 30px 20px;
+  }
+
+  .card.daftar-card .card-image img {
+    width: 150px;
+  }
+
+  .card.daftar-card .card-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .card.daftar-card .card-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  margin-top: 80px;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-section h2 {
+  font-size: 3rem;
+  margin-bottom: 70px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.contact-section h2 span {
+  color: #0099ff;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.large-button {
+  padding: 20px 60px;
+  font-size: 1.3rem;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  min-width: 240px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.large-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* RESPONSIVE CONTACT BUTTON */
+@media (max-width: 576px) {
+  .contact-buttons {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .large-button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+}
+
+/* REQUIREMENT SECTION */
+.requirement-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+  padding: 40px 0;
+  max-width: 1000px;
+  gap: 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* box item */
+.requirement-item {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  min-width: 250px;
+  position: relative;
+}
+
+/* icon */
+.requirement-item img {
+  width: 150px;
+}
+
+/* text */
+.requirement-item p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+/* garis pemisah untuk desktop */
+.requirement-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 70%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+/* garis pemisah untuk mobile (horizontal) */
+@media (max-width: 768px) {
+  .requirement-section {
+    flex-direction: column;
+  }
+
+  .requirement-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .requirement-item {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 20px;
+  }
+
+  .requirement-item:last-child {
+    border-bottom: none;
+  }
+}
+
+.footer {
+  margin-top: 60px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#starsCanvas, #interactiveCanvas, canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+}
+
