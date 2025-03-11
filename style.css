@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1e0039, #002347); /* bg */
+  background: linear-gradient(135deg, #22053b, #04305c); /* bg */
   color: white;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -34,7 +34,9 @@ body {
 }
 
 .hero h1 span {
-  color: #0099ff;
+  background: linear-gradient(to right, #bb00ff, #53baff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero p {
@@ -145,6 +147,11 @@ body {
   text-align: left;
 }
 
+.card-text h2 span {
+  background: linear-gradient(to right, #bb00ff, #53baff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* Hover effect */
 .card.daftar-card:hover {
   transform: scale(1.03);
@@ -250,7 +257,9 @@ body {
 }
 
 .contact-section h2 span {
-  color: #0099ff;
+  background: linear-gradient(to right, #bb00ff, #53baff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-buttons {
